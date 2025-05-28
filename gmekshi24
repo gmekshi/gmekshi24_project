@@ -1,3 +1,5 @@
+git commit -m "Add backend updates"#include <stdio.h>
+#include <stiuo.h>
 struct Node{
    int ID;
    float avg;
@@ -18,4 +20,7 @@ void createList(struct Node *temp, int n)
         temp->next=newNode;
         temp=newNode;
     }
+}
+int main(){
+    printf("I am the best");
 }
