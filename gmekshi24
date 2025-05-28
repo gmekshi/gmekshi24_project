@@ -1,0 +1,21 @@
+struct Node{
+   int ID;
+   float avg;
+
+   struct Node *next;
+};
+
+void createList(struct Node *temp, int n)
+{
+    struct Node *newNode;
+
+    for(int i=0; i<n; i++)
+    {
+        newNode = (struct Node*)malloc(sizeof(struct Node));
+        scanf("%d%f", &newNode->ID, &newNode->avg);
+        //newNode->next=NULL;
+
+        temp->next=newNode;
+        temp=newNode;
+    }
+}
